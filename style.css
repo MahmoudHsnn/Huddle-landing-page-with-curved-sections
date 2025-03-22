@@ -1,0 +1,622 @@
+.gg {
+  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+header img {
+  width: 100px;
+}
+
+header button {
+  padding: 8px 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: hsl(322, 100%, 66%);
+  border: 2px solid hsl(322, 100%, 66%);
+  border-radius: 30px;
+  outline: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+header button:hover {
+  color: hsl(321, 100%, 78%);
+  border-color: hsl(321, 100%, 78%);
+  transition: 0.1s;
+}
+
+main {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+main .page-title {
+  text-align: center;
+}
+
+main .page-title h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: hsl(192, 100%, 9%);
+}
+
+main .page-title p {
+  margin: 40px 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: hsl(192, 100%, 9%);
+}
+
+main .page-title button {
+  width: 70%;
+  padding: 15px 20px;
+  background-color: hsl(322, 100%, 66%);
+  box-shadow: 0 5px 10px #ddd;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  outline: none;
+  cursor: pointer;
+}
+
+main .page-title button:hover {
+  background-color: hsl(321, 100%, 78%);
+  transition: 0.1s;
+}
+
+main .page-title .mockup {
+  display: block;
+  width: 100%;
+  margin: 60px 0;
+}
+
+main .stat {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+main .stat div {
+  display: flex;
+  flex-direction: column;
+}
+
+main .stat div img {
+  width: 25px;
+  height: 25px;
+}
+
+main .stat div .bold {
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: hsl(192, 100%, 9%);
+}
+
+main .stat div .fate {
+  margin: 5px auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  color: hsl(0, 0%, 70%);
+}
+
+main .stat div .fate span {
+  display: block;
+}
+
+main .functions {
+  width: 100%;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+main .functions > div {
+  text-align: center;
+  position: relative;
+}
+
+main .functions .grow,
+main .functions .users {
+  background-color: hsl(207, 100%, 98%);
+}
+
+main .functions .grow::before,
+main .functions .users::before,
+main .functions .grow::after,
+main .functions .users::after {
+  content: "";
+  width: 100%;
+  height: 100px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0px;
+}
+
+main .functions .grow::before,
+main .functions .users::before {
+  top: -100px;
+}
+
+main .functions .grow::after,
+main .functions .users::after {
+  bottom: -100px;
+}
+
+main .functions .grow::before {
+  background-image: url(./bg-section-top-mobile-1.svg);
+}
+
+main .functions .grow::after {
+  background-image: url(./bg-section-bottom-mobile-1.svg);
+}
+
+main .functions .users::before {
+  background-image: url(./bg-section-top-mobile-2.svg);
+}
+
+main .functions .users::after {
+  background-image: url(./bg-section-bottom-mobile-2.svg);
+}
+
+main .functions > div img {
+  width: 100%;
+}
+
+main .functions > div h3 {
+  margin: 30px 0 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: hsl(192, 100%, 9%);
+}
+
+main .functions > div p {
+  margin-bottom: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: hsl(192, 100%, 9%);
+  line-height: 1.4;
+}
+
+main .submit {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+main .submit h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: hsl(192, 100%, 9%);
+}
+
+main .submit button {
+  width: 70%;
+  margin-top: 30px;
+  padding: 12px 20px;
+  background-color: hsl(322, 100%, 66%);
+  box-shadow: 0 5px 10px #ddd;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  outline: none;
+  cursor: pointer;
+}
+
+main .submit button:hover {
+  background-color: hsl(321, 100%, 78%);
+  transition: 0.1s;
+}
+
+footer {
+  padding: 60px 20px;
+  background-color: hsl(192, 100%, 9%);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+footer::before {
+  content: "";
+  width: 100%;
+  height: 150px;
+  background-image: url(./bg-footer-top-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -45px;
+  left: 0;
+}
+
+footer .right h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: hsl(207, 100%, 98%);
+}
+
+footer .right p {
+  margin: 20px 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: hsl(207, 100%, 98%);
+  line-height: 1.5;
+}
+
+footer .right input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+footer .right input:focus {
+  border: 1px solid red;
+  transition: 0.1s;
+}
+
+footer .right input::placeholder {
+  color: transparent;
+}
+
+footer .right input:hover::placeholder,
+footer .right input:focus::placeholder {
+  color: hsl(192, 100%, 9%);
+}
+
+footer .right button {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: hsl(322, 100%, 66%);
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: hsl(207, 100%, 98%);
+  cursor: pointer;
+  position: relative;
+}
+
+footer .right button::before {
+  content: "Check your email please";
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  color: red;
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: -150px;
+  display: none;
+}
+
+footer .right button:hover {
+  background-color: hsl(321, 100%, 78%);
+  transition: 0.1s;
+}
+
+footer .right button:active::before {
+  display: block;
+}
+
+footer .left .logo img {
+  width: 40px;
+  height: 30px;
+}
+
+footer .left .logo span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: hsl(207, 100%, 98%);
+}
+
+footer .left p {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: hsl(207, 100%, 98%);
+  line-height: 1.5;
+}
+
+footer .left .tel,
+footer .left .mail {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+footer .left .tel img,
+footer .left .mail img {
+  width: 14px;
+  height: 14px;
+}
+
+footer .left .tel span,
+footer .left .mail span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: hsl(207, 100%, 98%);
+}
+
+footer .left .social {
+  margin-top: 40px;
+}
+
+footer .left .social i {
+  margin-right: 10px;
+  font-size: 24px;
+  color: hsl(207, 100%, 98%);
+  cursor: pointer;
+}
+
+footer .left .social i:hover {
+  color: aqua;
+}
+@media (min-width: 376px) {
+  header {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  header img {
+    width: 300px;
+  }
+
+  header button {
+    padding: 10px 40px;
+    font-size: 16px;
+  }
+
+  main {
+    margin-bottom: 200px;
+  }
+  main .page-title {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  main .page-title h2 {
+    font-size: 54px;
+  }
+
+  main .page-title p {
+    width: 50%;
+    margin: 40px auto;
+    font-size: 22px;
+  }
+
+  main .page-title button {
+    width: 30%;
+    padding: 25px 50px;
+    font-size: 22px;
+  }
+
+  main .stat {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  main .stat div img {
+    width: 50px;
+    height: 50px;
+  }
+
+  main .stat div .bold {
+    font-size: 100px;
+  }
+
+  main .stat div .fate {
+    font-size: 24px;
+  }
+
+  main .stat div .fate span {
+    display: inline;
+  }
+
+  main .functions {
+    gap: 150px;
+  }
+
+  main .functions > div {
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  main .functions .flowing {
+    flex-direction: row;
+  }
+
+  main .functions .grow::before,
+  main .functions .users::before,
+  main .functions .grow::after,
+  main .functions .users::after {
+    height: 150px;
+    background-size: cover;
+  }
+
+  main .functions .grow::before {
+    background-image: url(./bg-section-top-desktop-1.svg);
+  }
+
+  main .functions .grow::after {
+    background-image: url(./bg-section-bottom-desktop-1.svg);
+  }
+
+  main .functions .users::before {
+    background-image: url(./bg-section-top-desktop-1.svg);
+  }
+
+  main .functions .users::after {
+    background-image: url(./bg-section-bottom-desktop-2.svg);
+  }
+
+  main .functions .grow::before,
+  main .functions .users::before {
+    top: -150px;
+  }
+
+  main .functions .grow::after,
+  main .functions .users::after {
+    bottom: -150px;
+  }
+
+  main .functions > div img {
+    width: 50%;
+  }
+
+  main .functions > div .side {
+    width: 40%;
+    text-align: left;
+  }
+
+  main .functions > div .side h3 {
+    font-size: 42px;
+  }
+
+  main .functions > div .side p {
+    font-size: 16px;
+  }
+
+  main .submit h3 {
+    font-size: 40px;
+  }
+
+  main .submit button {
+    width: 30%;
+    padding: 25px 50px;
+    font-size: 22px;
+  }
+
+  footer {
+    padding-left: 100px;
+    padding-right: 100px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  footer::before {
+    width: 100%;
+    background-image: url(./bg-footer-top-desktop.svg);
+    background-size: cover;
+    top: -150px;
+  }
+
+  footer .left {
+    width: 30%;
+  }
+
+  footer .left .logo img {
+    width: 50px;
+    height: 40px;
+  }
+
+  footer .left .logo span {
+    font-size: 50px;
+  }
+
+  footer .left p {
+    font-size: 16px;
+  }
+
+  footer .left .tel img,
+  footer .left .mail img {
+    width: 16px;
+    height: 16px;
+  }
+
+  footer .left .tel span,
+  footer .left .mail span {
+    font-size: 16px;
+  }
+
+  footer .left .social i {
+    font-size: 28px;
+  }
+
+  footer .right {
+    width: 50%;
+  }
+
+  footer .right h3 {
+    font-size: 28px;;
+  }
+
+  footer .right p {
+    width: 70%;
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  footer .right .form {
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  footer .right input {
+    width: 60%;
+    height: 100%;
+  }
+
+  footer .right .form button {
+    width: 30%;
+  }
+
+  footer .right button::before {
+    top: 60px;
+    left: -400px
+  }
+}
